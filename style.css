@@ -1,16 +1,20 @@
 body {
-  margin: 1;
+  margin: 1s;
   padding: 1;
+  background-color: #f2e1ac;
 }
+
 #map {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%; }
+  top: 10;
+  bottom: 10;
+  width: 97.5%;
+height: 100%;
+ }
 
   h1 {
     position: absolute;
-    top: 20px;
+    top: 330;
     left: 20px;
     z-index: 1000;
     background: rgba(255, 255, 255, 0.9);
@@ -22,3 +26,23 @@ body {
     font-size: 24px;
     color: #333;
 }
+ h2 {
+  text-align: center;
+  font-size: 30px;
+ }
+
+ img {
+  display: block;
+  margin: auto;
+ }
+
+
+html {
+  --border-width: 10px;
+  padding: var(--border-width);
+  &:before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    border: solid var(--border-width);
+  }}
